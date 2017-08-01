@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>显示图表</title>
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+</head>
+<body>
+    <div class="cal-main" data-setting='{
+    									"width":900,
+     									"height":270,
+     									"calWidth":640,
+     									"calHeight":270,
+     									"scale":0.9,
+     									"verticalAlign":"middle",
+     									"speed":300
+    									}'>
+        <div class="cal-btn cal-btn-left"></div>
+        <ul class="cal-list">
+            <li class="cal-item"><a href="#"><img src="img/1.jpg" width="100%" height="100%"></a></li>
+            <li class="cal-item"><a href="#"><img src="img/2.jpg" width="100%" height="100%"></a></li>
+            <li class="cal-item"><a href="#"><img src="img/3.jpg" width="100%" height="100%"></a></li>
+            <li class="cal-item"><a href="#"><img src="img/4.jpg" width="100%" height="100%"></a></li>
+            <li class="cal-item"><a href="#"><img src="img/6.jpg" width="100%" height="100%"></a></li>
+            <li class="cal-item"><a href="#"><img src="img/5.jpg" width="100%" height="100%"></a></li>
+            <li class="cal-item"><a href="#"><img src="img/3.jpg" width="100%" height="100%"></a></li>
+        </ul>
+        <div class="cal-btn cal-btn-right"></div>
+    </div>
+    <script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+    <script type="text/javascript" src='js/index.js'></script>
+    <script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        CarOusel.init($('.cal-main'))
+    })
+    </script>
+</body>
+</html>

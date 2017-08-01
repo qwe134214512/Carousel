@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>显示图表</title>
+    <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        var gg="dsafdsafdsafdsafsdaf";
+        window.onload=function () {
+            alert($("#ii")[0].contentWindow.ff);
+        }
+        function ggMM() {
+            alert("2222222222222222222222222222222");
+        }
+        function callIframeMethod() {
+            //document.getElementById("ii").contentWindow.test();
+            $("#ii")[0].contentWindow.test(); //用jquery调用需要加一个[0]
+        }
+        function callIframeField() {
+
+        }
+        function callIframeHtml() {
+            alert($("#ii")[0].contentWindow.$("#dd").val());
+            //alert($("#ii")[0].contentWindow.document.getElementById("dd").value);
+            //alert($("#ii")[0].contentWindow.document.getElementById("dd").value);
+        }
+        function giveParameter() {
+            $("#ii")[0].contentWindow.hellobaby="dsafdsafsdafsdafsdafsdafsadfsadfsdafsadfdsaffdsaaaaaaaaaaaaa";
+        }
+
+    </script>
+</head>
+<body>
+<a href="#" onClick="giveParameter();">参数传递</a>
+<a href="#" onClick="callIframeMethod();">调用子iframe方法</a>
+<a href="#" onClick="callIframeField();">调用子iframe变量</a>
+<a href="#" onClick="callIframeHtml();">调用子iframe组件</a></br>
+<iframe style="display: none" id="ii" src="frame.html" width="100%" frameborder="0"></iframe>
+
+</body>
+</html>
